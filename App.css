@@ -1,0 +1,155 @@
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+/*O center ajuda no responsivo (UTILIZAR SEMPRE)*/
+.center {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main {
+  padding: 40px 0;
+  width: 100%;
+  background-color: rgb(13, 155, 221);
+  min-height: 300px;
+}
+
+.menu{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.menu h3{
+  color: white;
+  font-family: Tahoma;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  border:  2px solid white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.596);
+
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.menu a:hover{
+  background-color: white;
+  color: rgb(13, 155, 221);
+  border: 2px solid rgb(13, 155, 221);
+}
+
+.form h2 {
+  color: purple;
+  text-transform: uppercase;
+}
+
+.form {
+  width: 100%;
+  max-width: 600px;
+  margin: 10px auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-form {
+  justify-content: space-around;
+  margin: 0 auto;
+  display: flex;
+  max-width: 540px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+/*O width 48% calcula automaticamente o espaçamento dos inputs*/
+.form input[type=text]{
+  width: 48%;
+  height: 30px;
+  padding-left: 10px;
+  margin: 8px 0px;
+  justify-content: space-between;
+  box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.596);
+
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.form input[type=submit]{
+  width: 100%;
+  height: 40px;
+  background-color: purple;
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.596);
+  font-size: 20px;
+  color: white;
+  margin-top: 8px;
+
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.form input[type=submit]:hover{
+  background-color: white;
+  border: 1px solid purple;
+  color: purple;
+  box-shadow: 2px 3px 2px rgba(255, 255, 255, 0.514);
+}
+/*o width de 50% dividiu a página no meio*/
+.conteudo-single {
+  padding:  8px 30px;
+  margin-top: 35px;
+  width: 50%;
+
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.conteudo-single:hover{
+  border: 2px solid rgba(0, 0, 0, 0.356);
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.561);
+  background-color: rgba(128, 0, 128, 0.397);
+}
+
+.footer{
+  margin-top: 16.2%;
+  background-color: rgb(13, 155, 221);
+  height: 30px;
+  width: 100%;
+  color: white;
+  display: flex;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.footer h2{
+  font-size: 18px;
+  text-align: center;
+  align-items: center;
+}
+
+/*O truque de responsividade utilizado aqui foi colocar o width 100% no formulário*/
+@media screen and (max-width: 768px) {
+  .form input[type=text]{
+    width: 100%;
+  }
+  .conteudo-single{
+    width: 100%;
+  }
+  .footer{
+    flex-wrap: wrap;
+    height: 50%;
+    padding-bottom: 10px;
+  }
+}
